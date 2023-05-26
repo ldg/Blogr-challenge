@@ -1,6 +1,7 @@
 :root{
 /*colors*/
  --primary: hsl(356, 100%, 66%);
+ --secondary: hsl(0,0%, 100%);
  --primary-hvr: hsl(355, 100%, 74%);
  --heading-txt: hsl(208, 49%, 24%);
  --white-txt: hsl(0, 0%, 100%);
