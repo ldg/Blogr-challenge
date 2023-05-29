@@ -1,0 +1,29 @@
+:root {
+  /*colors*/
+  --primary: hsl(356, 100%, 66%);
+  --secondary: hsl(0,0%, 100%);
+  --primary-hvr: hsl(355, 100%, 74%);
+  --heading-txt: hsl(208, 49%, 24%);
+  --white-txt: hsl(0, 0%, 100%);
+  --footer-txt: hsl(240, 2%, 79%);
+  --body-txt: hsl(207, 13%, 34%);
+  --footer-bkg: hsl(240, 10%, 16%);
+  --grad-hero-lgt: hsl(13, 100%, 72%);
+  --grad-hero-drk: hsl(353, 100%, 62%);
+  --grad-body-drk: hsl(237, 17%, 21%);
+  --grad-body-lgt: hsl(237, 23%, 32%);
+  --submenu-bkg: hsl(240, 6%, 94%);
+  --submenu-txt: hsla(209, 48%, 24%, .75);
+  /* typography */
+  --base-font-sz: 16px;
+  --ff-body: "Overpass", sans-serif;
+  --ff-menus: "Ubuntu", sans-serif;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  /* media query breakpoints */
+  --mobile: 375px;
+  --desktop: 1440px;
+}

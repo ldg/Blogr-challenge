@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background test</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: white;
+            font-size: 6rem;
+        }
+        .background-one,
+        .background-two {
+            width: 600px;
+            height: 400px;
+        }
+        .background-one{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-image: linear-gradient(45deg, blue, red); */
+            background-image: url('/assets/img/bg-pattern-intro-mobile.svg'),linear-gradient(45deg, blue, red);
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .background-two {
+            background-image: linear-gradient(45deg, blue, red);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-one">
+        <h1>testing and other shit</h1>
+    </div>
+    <div class="background-two"></div>
+    
+</body>
+</html>

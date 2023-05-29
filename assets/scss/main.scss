@@ -1,34 +1,52 @@
 @use 'custom-properties';
 @use 'reset';
+@use 'footer';
+
 
 html, body {
   background-color: var(--secondary);
   font-family: var(--ff-body);
-  font-size: 1rem;
 }
-h2,h3{
-    font-size: 1.75em;
-}
+
 .hero {
-  background-image: linear-gradient(to bottom right, var(--grad-hero-lgt), var(--grad-hero-drk));
+  background-color: var(--primary);
+  background-image: url('/assets/img/bg-pattern-intro-mobile.svg'), linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -325px -240px;;
+  background-size: 1324px 1323px;
   padding-top: 3.5em;
+  padding-bottom: 9.75em;
   text-align: center;
+  border-radius: 0 0 0 100px;
+  margin-bottom: 6.25em;
 
   &__logo-container {
         display: flex;
         justify-content: space-between;
         padding-inline: 1.5em;
+        margin-bottom: 6.75em;
+    }
+
+    &__cta-container {
+        padding-inline: 1.5em;
     }
 
     &__heading{
-        font-size: 2.25rem;
-        line-height: 3.446875rem;
+        font-size: 2.25rem; //36px
+        line-height: 3.4375rem; //55px
         color: var(--white-txt);
     }
 
     &__content {
         font-size: 1.125em;
         color: var(--white-txt);
+        margin-bottom: 3em;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
     }
 
     &__button button {
@@ -36,6 +54,18 @@ h2,h3{
         height: 48px;
         border: 0;
         border-radius: 50px;
+    }
+
+    &__button.hero__button--outline button {
+        background: transparent;
+        border: 1px solid var(--secondary);
+        color: var(--white-txt);
+        font-weight: var(--fw-700);
+    }
+
+    &__button.hero__button--solid button {
+        color: var(--primary);
+        font-weight: var(--fw-700);
     }
 
     &__nav {
@@ -51,6 +81,7 @@ h2,h3{
         display: none;
     }
 }
+
 
 .menu {
     &__item {
@@ -86,26 +117,11 @@ h2,h3{
         }
     }
 }
-// li.menu__item a,
-// li.submenu__item a {
-//     text-decoration: none;
-//     color: var(--heading-text);
-//     font-weight: var(--fw-600);
-// }
+
 li.menu__item a.active {
   color: var(--submenu-txt);
 }
-// .submenu {
-//     background: var(--submenu-bkg);
-//     border-radius: 5px;
-// }
-// .submenu.close {
-//     display: none;
-// }
-// .submenu.open {
-//   padding-block: 1.5em;
-//   margin-top: 1.5em;
-// }
+
 .submenu.open a {
   /* opacity: .75; */
   color: var(--submenu-txt);
@@ -124,31 +140,60 @@ a.signup button {
     color: var(--white-txt);
 }
 
+.section {
+    padding-inline: 1.5em;
+
+    &__heading{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    &__subheading{
+        font-size: 1.75rem;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    &__content {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: center;
+        margin-bottom: 2.25em;
+    }
+
+    &__content.section__content--overlapped{
+        margin-bottom: 18.25em;
+    }
+
+}
+
 
 .section.section-dark {
-  background-image:linear-gradient(to right, var(--grad-body-drk), var(--grad-body-lgt));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/-1;
+  background-color: #3b3d5c;
+  background-image:url('/assets/img/bg-pattern-circles.svg'),linear-gradient(135deg, var(--grad-body-drk), var(--grad-body-lgt));
+  background-repeat: no-repeat;
+  background-size: 582px 584px;
+  background-position: top -290px right -110px;
   color: var(--white-txt);
-}
+  padding-bottom: 6.8125em;
+  border-radius: 0 6.25em;
+  margin-bottom: 4.9375em;
 
-/* footer section */
-footer.footer{
-    background-color: var(--footer-bkg);
-    color: var(--white-txt);
-    text-align: center;
-    &__nav{
-        .menu {
-            &__item{
-                font-size: 1rem;
-            }
-        }
+    .section__image-overlap {
+        grid-column: 1/-1;
+        margin-top: -12em;
+    }
+    .section__heading {
+        grid-column: 1/-1;
+        font-size: 2.5rem;
+        line-height: 3.8125rem;
+        font-weight: var(--fw-600);
+        letter-spacing: -1.2px;
+    }
+    .section__content{
+        grid-column: 1/-1;
     }
 }
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-    a {
-        color: hsl(228, 45%, 44%);
-    }
-}
-
