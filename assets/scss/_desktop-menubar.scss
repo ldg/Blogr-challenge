@@ -53,6 +53,7 @@
                 }
                 li.submenu__item--desktop:hover {
                     font-weight: var(--fw-700);
+                    transition: all .4s ease-in-out;
                 }
                 li.submenu__item--desktop a::after {
                     content:'' !important;
@@ -79,6 +80,7 @@
         li.menu__item--desktop:hover > ul.submenu--desktop {
             opacity: 1;
             width: 9.375em;
+            transition: all .4s ease-in-out;
         }
         
         li.menu__item--desktop a button {
@@ -88,6 +90,7 @@
         li.menu__item--desktop a button:hover {
             background: hsla(355, 100%, 74%, 1);
             color: var(--white-txt);
+            transition: all .4s ease-in-out;
         }
     }
 }

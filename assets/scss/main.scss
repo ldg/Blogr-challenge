@@ -83,6 +83,7 @@ html, body {
     &__button.hero__button--outline button:hover {
         background: var(--secondary);
         color: var(--primary);
+        transition: all .4s ease-in-out;
     }
 
     &__button.hero__button--solid button {
@@ -92,6 +93,7 @@ html, body {
     &__button.hero__button--solid button:hover {
         background: hsla(355, 100%, 74%, 1);
         color: var(--white-txt);
+        transition: all .4s ease-in-out;
     }
 
     &__nav {
@@ -176,7 +178,7 @@ a.signup button {
     &__heading{
         font-size: 1.75rem;
         text-align: center;
-    }
+    }    
 
     &__subheading{
         font-size: 1.75rem;
