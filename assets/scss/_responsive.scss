@@ -1,0 +1,13 @@
+/* small screens - no bigger than 699.98px */
+@media(max-width: 43.74875em) {
+    nav.hero__nav--desktop {
+        display: none;
+    }
+}
+
+/* larger screens - no smaller than 700px */
+@media( min-width: 43.75em ) {
+    .hero__mobileicons--container {
+        display: none; // hide mobile menu icons
+    }
+}

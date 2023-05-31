@@ -1,0 +1,100 @@
+.hero {
+    &__logo--container {
+        width: min(90%, 69.5em);
+        margin: 0 auto 6.75em auto;
+    }
+    &__logo{
+        cursor: pointer;
+    }
+    &__nav--desktop {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 4em;
+
+        ul.menu--desktop.menu-left {
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+            align-items: center;
+
+            li.menu__item--desktop a::after{
+                content: url('/assets/img/icon-arrow-light.svg');
+            }
+        }
+        ul.menu--desktop.menu-right {
+            display: flex;
+            width: 200px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li.menu__item--desktop {
+            list-style: none;
+            position: relative;
+
+            /* add submenu */
+            ul.submenu--desktop {
+                opacity: 0;
+                list-style: none;
+                background: white;
+                box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
+                border-radius: 5px;
+                padding: 1.5em;
+                position: absolute;
+                top: 1.3em;
+                left: -1em;
+                li.submenu__item--desktop{
+                    text-align: left;
+                    a {
+                        color: var(--grad-body-dark);
+                        font-size: .9375em;
+                        line-height: 2.0625em;
+                    }
+                }
+                li.submenu__item--desktop:hover {
+                    font-weight: var(--fw-700);
+                }
+                li.submenu__item--desktop a::after {
+                    content:'' !important;
+                }
+
+            }
+            
+            a {
+               font-family: var(--ff-menus);
+               color: var(--white-txt); 
+               text-decoration: none;
+            }
+            ul#product-submenu.open{
+                height: 200px;
+            }
+            ul#company-submenu.open {
+                height: 170px;
+            }
+            ul#connect-submenu.open {
+                height: 140px;
+            }
+        }
+
+        li.menu__item--desktop:hover > ul.submenu--desktop {
+            opacity: 1;
+            width: 9.375em;
+        }
+        
+        li.menu__item--desktop a button {
+            background: var(--white-txt);
+            color: var(--primary);
+        }
+        li.menu__item--desktop a button:hover {
+            background: hsla(355, 100%, 74%, 1);
+            color: var(--white-txt);
+        }
+    }
+}
+
+// ul.submenu--desktop {
+//     height: 0;
+//     opacity: 0;
+// }
+
+
