@@ -199,36 +199,15 @@ a.signup button {
 
 }
 
-
 .section.section-dark {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column: 1/-1;
-  background-color: #3b3d5c;
-  background-image:url('/assets/img/bg-pattern-circles.svg'),linear-gradient(135deg, var(--grad-body-drk), var(--grad-body-lgt));
-  background-repeat: no-repeat;
-  background-size: 582px 584px;
-  background-position: top -290px right -110px;
-  color: var(--white-txt);
-  padding-bottom: 6.8125em;
-  border-radius: 0 6.25em;
-  margin-bottom: 4.9375em;
-
-    .section__image-overlap {
-        grid-column: 1/-1;
-        margin-top: -12em;
-    }
-    .section__heading {
-        grid-column: 1/-1;
-        font-size: 2.5rem;
-        line-height: 3.8125rem;
-        font-weight: var(--fw-600);
-        letter-spacing: -1.2px;
-    }
-    .section__content{
-        grid-column: 1/-1;
-    }
+    background-color: #3b3d5c;
+        background-image:url('/assets/img/bg-pattern-circles.svg'),linear-gradient(135deg, var(--grad-body-drk), var(--grad-body-lgt));
+        background-repeat: no-repeat;
+        color: var(--white-txt);
+        border-radius: 0 6.25em;
+        margin-bottom: 4.9375em;
 }
+
 
 /* utility classes */
 .hide {

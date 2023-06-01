@@ -1,5 +1,6 @@
 /* footer section */
 footer.footer{
+    border-radius: 0px 100px 0px 0px;
     background-color: var(--footer-bkg);
     color: var(--white-txt);
     text-align: center;
@@ -7,9 +8,9 @@ footer.footer{
 
     &__nav{
         &__menu {
+            font-family: var(--ff-menus);
             &__item{
                 font-size: 1rem;
-                border: 1px solid red;
             }
         }
     }
@@ -17,6 +18,7 @@ footer.footer{
     .footer__nav .menu__item .footer__submenu {
         background-color: var(--footer-bkg);
         padding-top: 1.3125em;
+        opacity: .75;
         .submenu__item a{
             font-family: var(--ff-menus);
             font-weight: var(--fw-400);
