@@ -8,7 +8,7 @@
   --footer-txt: hsl(240, 2%, 79%);
   --body-txt: hsl(207, 13%, 34%);
   --footer-bkg: hsl(240, 10%, 16%);
-  --grad-hero-lgt: hsl(13, 100%, 72%);
+  --grad-hero-lgt: hsl(12, 100%, 72%);
   --grad-hero-drk: hsl(353, 100%, 62%);
   --grad-body-drk: hsl(237, 17%, 21%);
   --grad-body-lgt: hsl(237, 23%, 32%);
@@ -213,6 +213,12 @@ footer.footer .footer__logo {
 
 /* small screens - no bigger than 699.98px */
 @media (max-width: 43.74875em) {
+  .hero {
+    background-image: url("/assets/img/bg-pattern-intro-mobile.svg"), linear-gradient(130deg, #FF8F71 0%, #FF3E55 100%);
+    background-size: 1400px 1400px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -370px -270px;
+  }
   nav.hero__nav--desktop {
     display: none;
   }
@@ -261,6 +267,14 @@ footer.footer .footer__logo {
 }
 /* larger screens - no smaller than 700px */
 @media (min-width: 43.75em) {
+  .hero {
+    background-image: url("/assets/img/bg-pattern-intro-desktop.svg"), -webkit-gradient(linear, left bottom, left top, from(#FF8F71), to(#FF3E55));
+    background-image: url("/assets/img/bg-pattern-intro-desktop.svg"), linear-gradient(360deg, #FF8F71 0%, #FF3E55 100%);
+    background-size: 934px 937px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -330px -1300px;
+    background-size: 3175px 3174px;
+  }
   .hero__mobileicons--container {
     display: none;
   }
@@ -350,10 +364,6 @@ html, body {
 
 .hero {
   background-color: var(--primary);
-  background-image: url("/assets/img/bg-pattern-intro-mobile.svg"), linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
-  background-repeat: no-repeat, no-repeat;
-  background-position: -325px -240px;
-  background-size: 1324px 1323px;
   padding-top: 3.5em;
   padding-bottom: 9.75em;
   text-align: center;
