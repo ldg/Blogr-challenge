@@ -18,6 +18,10 @@
             justify-content: space-between;
             align-items: center;
 
+             li.menu__item--desktop a:hover {
+                opacity: .75;
+             }
+
             li.menu__item--desktop a::after{
                 content: url('/assets/img/icon-arrow-light.svg');
             }

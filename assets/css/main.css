@@ -92,6 +92,9 @@ video {
       -ms-flex-align: center;
           align-items: center;
 }
+.hero__nav--desktop ul.menu--desktop.menu-left li.menu__item--desktop a:hover {
+  opacity: 0.75;
+}
 .hero__nav--desktop ul.menu--desktop.menu-left li.menu__item--desktop a::after {
   content: url("/assets/img/icon-arrow-light.svg");
 }
