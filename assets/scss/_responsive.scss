@@ -163,3 +163,10 @@
         }
     }
 }
+
+/* screens larger than 1440px */
+@media(min-width: 90.0625em) {
+    .section__wrapper:nth-of-type(2) {
+        width: 730px;
+    }
+}
