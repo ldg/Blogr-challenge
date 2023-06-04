@@ -393,11 +393,12 @@ footer.footer .footer__logo {
     background-position: -17.5em 2.2em;
     padding-top: 16.375em;
     padding-bottom: 11em;
-    margin-top: 9em;
+    margin-top: 0;
     margin-bottom: 10.25em;
   }
   .section.section-bottom .section__wrapper {
     grid-column: 2/3;
+    padding-right: 7.3125em;
   }
   .section.section-bottom .section__wrapper .section__subheading {
     line-height: 1.75rem;
