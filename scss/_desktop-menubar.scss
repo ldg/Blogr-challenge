@@ -21,9 +21,17 @@
              li.menu__item--desktop a:hover {
                 opacity: .75;
              }
+             li.menu__item--desktop a:hover:after {
+                transform: rotate(180deg);
+             }
 
             li.menu__item--desktop a::after{
                 content: url('/assets/img/icon-arrow-light.svg');
+                display: inline-block;
+                transition: all .2s ease-in-out;
+                width: 8px;
+                height: auto;
+                margin-left: .35em;
             }
         }
         ul.menu--desktop.menu-right {

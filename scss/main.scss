@@ -26,6 +26,11 @@ html, body {
             height: 2.5em;
         }
 
+        .hero__logo:hover {
+            opacity: .75;
+            transition: opacity .4s ease-in-out;
+        }
+
         .hero--hamburger {
             width: 2em;
             height: 1.125em;
