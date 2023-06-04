@@ -317,6 +317,9 @@ footer.footer .footer__logo {
     line-height: 6.125rem;
     color: var(--white-txt);
   }
+  .hero .hero__cta--container {
+    padding-top: 0.5em;
+  }
   .hero__content {
     font-size: 1.125em;
     color: var(--white-txt);
@@ -361,11 +364,11 @@ footer.footer .footer__logo {
     font-size: 2.5rem;
     line-height: 3.8125;
     text-align: center;
-    margin-bottom: 2.2em;
+    margin-bottom: 1.3em;
     padding-top: 1em;
   }
   .section.section-dark {
-    margin-top: 3.5625em;
+    margin-top: 0.7625em;
     padding-bottom: 0;
     padding-inline: 7.3125em;
     background-position: -13.7em -32em;
