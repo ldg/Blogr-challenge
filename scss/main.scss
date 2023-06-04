@@ -12,11 +12,8 @@ html, body {
 
 .hero {
   background-color: var(--primary);
-  padding-top: 3.5em;
-  padding-bottom: 9.75em;
   text-align: center;
   border-radius: 0 0 0 100px;
-  margin-bottom: 6.25em;
 
   &__logo--container {
         display: flex;
@@ -43,18 +40,6 @@ html, body {
 
     &__cta--container {
         padding-inline: 1.5em;
-    }
-
-    &__heading{
-        font-size: 2.25rem; //36px
-        line-height: 3.4375rem; //55px
-        color: var(--white-txt);
-    }
-
-    &__content {
-        font-size: 1.125em;
-        color: var(--white-txt);
-        margin-bottom: 3em;
     }
 
     &__button--container {
@@ -179,18 +164,20 @@ a.signup button {
     &__heading{
         font-size: 1.75rem;
         text-align: center;
+        font-weight: var(--fw-600);
+        color: var(--heading-txt);
     }    
 
     &__subheading{
         font-size: 1.75rem;
-        text-align: center;
         margin-bottom: 1em;
+        font-weight: var(--fw-600);
+        color: var(--heading-txt);
     }
 
     &__content {
         font-size: 1rem;
         line-height: 1.75rem;
-        text-align: center;
         margin-bottom: 2.25em;
     }
 
@@ -202,11 +189,14 @@ a.signup button {
 
 .section.section-dark {
     background-color: #3b3d5c;
-        background-image:url('/assets/img/bg-pattern-circles.svg'),linear-gradient(135deg, var(--grad-body-drk), var(--grad-body-lgt));
-        background-repeat: no-repeat;
-        color: var(--white-txt);
-        border-radius: 0 6.25em;
-        margin-bottom: 4.9375em;
+    background-image:url('/assets/img/bg-pattern-circles.svg'),linear-gradient(135deg, var(--grad-body-drk), var(--grad-body-lgt));
+    background-repeat: no-repeat;
+    color: var(--white-txt);
+    border-radius: 0 6.25em;
+    margin-bottom: 4.9375em;
+        .section__heading {
+            color: var(--white-txt)
+        }
 }
 
 
