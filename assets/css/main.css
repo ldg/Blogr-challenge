@@ -221,7 +221,7 @@ footer.footer .footer__nav .menu__item .footer__submenu .submenu__item a {
 /* small screens - no bigger than 699.98px */
 @media (max-width: 43.74875em) {
   .hero {
-    background-image: url("/assets/img/bg-pattern-intro-mobile.svg"), linear-gradient(130deg, #FF8F71 0%, #FF3E55 100%);
+    background-image: url("../assets/img/bg-pattern-intro-mobile.svg"), linear-gradient(130deg, #FF8F71 0%, #FF3E55 100%);
     background-size: 1400px 1400px;
     background-repeat: no-repeat, no-repeat;
     background-position: -370px -270px;
