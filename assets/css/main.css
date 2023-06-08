@@ -287,7 +287,7 @@ footer.footer .footer__nav .menu__item .footer__submenu .submenu__item a {
     grid-column: 1/-1;
   }
   .section.section-bottom {
-    background: url("/assets/img/illustration-laptop-mobile.svg") no-repeat top center;
+    background: url("../assets/img/illustration-laptop-mobile.svg") no-repeat top center;
   }
   .section.section-bottom .section__wrapper {
     padding-top: 26em;
@@ -301,8 +301,8 @@ footer.footer .footer__logo {
 /* larger screens - no smaller than 700px */
 @media (min-width: 43.75em) {
   .hero {
-    background-image: url("/assets/img/bg-pattern-intro-desktop.svg"), -webkit-gradient(linear, left bottom, left top, from(#FF8F71), to(#FF3E55));
-    background-image: url("/assets/img/bg-pattern-intro-desktop.svg"), linear-gradient(360deg, #FF8F71 0%, #FF3E55 100%);
+    background-image: url("../assets/img/bg-pattern-intro-desktop.svg"), -webkit-gradient(linear, left bottom, left top, from(#FF8F71), to(#FF3E55));
+    background-image: url("../assets/img/bg-pattern-intro-desktop.svg"), linear-gradient(360deg, #FF8F71 0%, #FF3E55 100%);
     background-size: 934px 937px;
     background-repeat: no-repeat, no-repeat;
     background-position: -330px -1300px;
